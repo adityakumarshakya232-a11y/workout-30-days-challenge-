@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("image/background.jpgaqa") no-repeat center center/cover;
+    color: white;
+}
+
+.main {
+    text-align: center;
+    background: rgba(0,0,0,0.85);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: cyan;
+    text-shadow: 0 0 15px cyan;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 6px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg,#00f2ff,#0066ff);
+    color: black;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px cyan;
+}
+
+.workout {
+    display: none;
+    margin-top: 20px;
+}
+
+.exercise {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.exercise img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+.complete-btn {
+    margin-top: 10px;
+    background: linear-gradient(45deg,#00ffcc,#00ccff);
+}
+
+#progressBox {
+    margin-top: 30px;
+}

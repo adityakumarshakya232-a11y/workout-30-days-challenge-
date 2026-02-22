@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jinwoo Workout System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <h1>JINWOO WORKOUT SYSTEM</h1>
+
+    <div class="mode-buttons">
+        <button onclick="setMode(6)">6 Days Mode</button>
+        <button onclick="setMode(30)">30 Days Mode</button>
+        <button onclick="resetProgress()">Reset</button>
+    </div>
+
+    <div class="day-buttons">
+        <button onclick="showDay('monday')">Monday</button>
+        <button onclick="showDay('tuesday')">Tuesday</button>
+        <button onclick="showDay('wednesday')">Wednesday</button>
+        <button onclick="showDay('thursday')">Thursday</button>
+        <button onclick="showDay('friday')">Friday</button>
+        <button onclick="showDay('saturday')">Saturday</button>
+    </div>
+
+    <!-- WORKOUT SECTIONS -->
+
+    <div id="monday" class="workout">
+        <h2>Monday - Chest + Forearms</h2>
+
+        <div class="exercise">
+            <input type="checkbox">
+            <img src="image/pushups.png">
+            <p>Push Ups - 4x15</p>
+        </div>
+
+        <div class="exercise">
+            <input type="checkbox">
+            <img src="image/Dimond pushups.jpg">
+            <p>Diamond Push Ups - 3x12</p>
+        </div>
+
+        <div class="exercise">
+            <input type="checkbox">
+            <img src="image/plank.png">
+            <p>Forearm Plank - 3x45 sec</p>
+        </div>
+
+        <div class="exercise">
+            <input type="checkbox">
+            <img src="image/forarms.jpeg">
+            <p>Wrist Curls (Water Bottle) - 3x15</p>
+        </div>
+
+        <button class="complete-btn" onclick="completeDay()">Complete Day</button>
+    </div>
+
+
+    <div id="tuesday" class="workout">
+        <h2>Tuesday - Legs</h2>
+
+        <div class="exercise">
+            <input type="checkbox">
+            <img src="image/squats.png">
+            <p>Squats - 4x20</p>
+        </div>
+
+        <div class="exercise">
+            <input type="checkbox">
+            <img src="image/lunges.png">
+            <p>Lunges - 3x15</p>
+        </div>
+
+        <div class="exercise">
+            <input type="checkbox">
+            <img src="image/wallsit.jpeg">
+            <p>Wall Sit - 3x45 sec</p>
+        </div>
+
+        <button class="complete-btn" onclick="completeDay()">Complete Day</button>
+    </div>
+
+    <!-- Wednesday -->
+<div id="wednesday" class="workout">
+    <h2>Wednesday - Back</h2>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/superman.jpeg">
+        <p>Superman Hold - 3x30 sec</p>
+    </div>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/snowangel.jpeg">
+        <p>Reverse Snow Angels - 3x15</p>
+    </div>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/towelrow.jpeg">
+        <p>Towel Rows - 3x12</p>
+    </div>
+
+    <button class="complete-btn" onclick="completeDay()">Complete Day</button>
+</div>
+
+
+<!-- Thursday -->
+<div id="thursday" class="workout">
+    <h2>Thursday - Abs</h2>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/crunch.jpeg">
+        <p>Crunches - 4x20</p>
+    </div>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/legraise.avif">
+        <p>Leg Raises - 4x15</p>
+    </div>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/twist.jpeg">
+        <p>Russian Twist - 3x30</p>
+    </div>
+
+    <button class="complete-btn" onclick="completeDay()">Complete Day</button>
+</div>
+
+
+<!-- Friday -->
+<div id="friday" class="workout">
+    <h2>Friday - Full Body</h2>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/burpees.png">
+        <p>Burpees - 3x12</p>
+    </div>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/climber.jpeg">
+        <p>Mountain Climbers - 4x30</p>
+    </div>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/jumpsquat.jpeg">
+        <p>Jump Squats - 3x15</p>
+    </div>
+
+    <button class="complete-btn" onclick="completeDay()">Complete Day</button>
+</div>
+
+
+<!-- Saturday -->
+<div id="saturday" class="workout">
+    <h2>Saturday - Shoulders + Core</h2>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/pike.jpeg">
+        <p>Pike Push Ups - 4x12</p>
+    </div>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/shouldertap.jpeg">
+        <p>Shoulder Taps - 3x20</p>
+    </div>
+
+    <div class="exercise">
+        <input type="checkbox">
+        <img src="image/sideplank.jpeg">
+        <p>Side Plank - 3x30 sec</p>
+    </div>
+
+    <button class="complete-btn" onclick="completeDay()">Complete Day</button>
+</div>
+
+
+    <!-- Same structure copy for Wed, Thu, Fri, Sat -->
+
+    <div id="progressBox">
+        <h3>Progress</h3>
+        <p id="progressText">0 Days Completed</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
